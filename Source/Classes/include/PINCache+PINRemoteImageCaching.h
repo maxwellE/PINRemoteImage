@@ -6,10 +6,15 @@
 //
 //
 
+#if BAZEL
+#import "PINCache/Source/PINCache.h"
+#else
 #if !__has_include(<PINCache/PINCache.h>)
 #import "PINCache.h"
 #else
 #import <PINCache/PINCache.h>
+#endif
+
 #endif
 
 #import "PINRemoteImageCaching.h"
